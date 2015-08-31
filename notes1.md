@@ -75,7 +75,7 @@ Anther way to capture these arguments is with `eval(substitue(alist(...)))`.
 
 The differences are subtle:
 
-```
+```R
 > capture <- function(...) { list(...) }
 > capture2 <- function(...) { alist(...) }
 > capture3 <- function(...) { eval(substitute(list(...))) }
