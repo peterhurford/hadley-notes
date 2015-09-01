@@ -75,7 +75,7 @@ Anther way to capture these arguments is with `eval(substitue(alist(...)))`.
 
 The differences are subtle:
 
-```
+```R
 > capture <- function(...) { list(...) }
 > capture2 <- function(...) { alist(...) }
 > capture3 <- function(...) { eval(substitute(list(...))) }
@@ -141,5 +141,7 @@ c
 ```
 
 1.) `alist(...)` only returns `...` unless you wrap it in `eval(substitute())`.
+
 2.) `list(...)` and `eval(substitue(list(...)))` are identical.
+
 3.) `list(...)` will capture `c` as a name (like `substitute(c)`) whereas `eval(substitute(alist(...)))` will capture `c` as the function in the global environment (like `eval(substitute(c))`).
