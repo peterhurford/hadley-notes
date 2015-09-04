@@ -53,6 +53,7 @@ We also reviewed `mapply` which can be used to loop over multiple arguments:
 
 A preferred version of this is `Map`, which keeps thins in list form by calling `mapply` with `SIMPLIFY = FALSE`.
 
+```R
 > Map(function(x, y, z) x + y + z, seq(1, 3), seq(2, 4), seq(3, 5))
 [[1]]
 [1] 6
@@ -62,6 +63,7 @@ A preferred version of this is `Map`, which keeps thins in list form by calling 
 
 [[3]]
 [1] 12
+```
 
 
 ## Roxygen's importFrom
