@@ -47,7 +47,7 @@ We also reviewed `mapply` which can be used to loop over multiple arguments:
 ```R
 > mapply(function(x, y) x + y, seq(1, 3), seq(2, 4))
 [1] 3 5 7
-> mapply(function(x, y, x) x + y + z, seq(1, 3), seq(2, 4), seq(3, 5))
+> mapply(function(x, y, z) x + y + z, seq(1, 3), seq(2, 4), seq(3, 5))
 [1] 6 9 12
 ```
 
