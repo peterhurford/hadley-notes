@@ -101,10 +101,12 @@ Not only was there a value change, but there was also a *class change*.  We went
 
 `all.equal` was fooled because it did type coercion when checking.  `identical` would have not been fooled.
 
+```
 > all.equal(x[[2]][-1], y[[2]][-1])
 [1] TRUE
 > identical(x[[2]][-1], y[[2]][-1])
 [1] FALSE
+```
 
 We should have used `3L` instead of `3`.
 
