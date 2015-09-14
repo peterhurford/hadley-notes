@@ -2,7 +2,11 @@
 
 #### History
 
-Hadley had a thesis about how to properly structure data, based on third-normal form databases (Edgar Codd).  This thesis resulted in the reshape package.  Plyr was then built on reshape to provide ways of manipulating data within this framework.  Dplyr was built on plyr to provide a larger amount of possible manipulations, but restricted just to data frames.  Dplyr also lets you work out-of-memory from an external database, like Postgres.
+Hadley [had a thesis about how to properly structure data](http://had.co.nz/thesis/), based on [third-normal form databases](https://en.wikipedia.org/wiki/Third_normal_form) (see [Edgar Codd](https://en.wikipedia.org/wiki/Edgar_F._Codd)).  This thesis resulted in the [reshape package](https://github.com/hadley/reshape) to turn data into the proper form.
+
+[Plyr](https://github.com/hadley/plyr) was then built on reshape to provide ways of manipulating data within this framework.  Dplyr was built on plyr to provide a larger amount of possible manipulations, but restricted just to data frames.
+
+Dplyr also lets you work out-of-memory from an external database, like Postgres.
 
 
 #### Learning Dplyr
