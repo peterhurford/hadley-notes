@@ -16,7 +16,7 @@
 [1]  1 NA
 ```
 
-**Question? Is it `match` equivalent to `which(x %in% y)`
+**Question? Is it `match` equivalent to `which(x %in% y)`**
 
 ```R
 > match(c(2, 11), seq(2, 10))
